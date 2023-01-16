@@ -39,7 +39,7 @@
               <p class="collection-title desine">Hot Collection</p>
               <h1 class="text-dark mb-3">New Trend For Women</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea libero  ipsa,<br> iste aperiam ipsum ipsam quis. Corporis porro nam fuga inventore <br>nesciunt omnis rerum.</p>
-              <button class="border border-dark bg-transparent py-3 px-5">Shop Now</button>
+              <button class="border border-dark bg-transparent py-2 px-5">Shop Now</button>
              </div>
         <div class="col-lg-5  " id="collection-multiphoto">
         <img id="collection-photo1" src="{{asset('img/img4.jpeg')}}" class="  rounded ">
@@ -79,12 +79,15 @@
        <!-- <div></div> -->
       <li>Kids</li>
   </div>
-  <div class="container">
+  <div id="container-res1" class="container">
     <div class="row pt-3">
-      <div class="col-xl-3">
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <button class="proudct-price">$150</button>
       <img src="{{asset('img/img4.jpeg')}}" class="secttion3-img">
-      
-      <button class="proudct-price">$150</button>
+      <!-- <div class="card1"> -->
+
+        
+      <!-- </div> -->
       <p class="proudact-name">
         Suspendisse et.
       </p>
@@ -103,77 +106,9 @@
 <br>
 
       </div>
-      <div class="col-xl-3">
-        
-      <img src="{{asset('img/img4.jpeg')}}" class="secttion3-img">
-      <button class="proudct-price">$150</button>
 
-      <p class="proudact-name">
-    Suspendisse et.
-   </p>
-      <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i style="    color: #7d7c7ca6;
-" class="fa fa-star rate- " aria-hidden="true"></i>
-<br>
-<br>
-<i class="fas fa-heart addicon"></i>
-   <i class="fas fa-shopping-cart addicon"></i>
-   <i class="fas fa-share-alt addicon"></i>
-   <br>
-<br>
-      </div>
-      <div class="col-xl-3">
-      <img src="{{asset('img/img4.jpeg')}}" class="secttion3-img">
-      <button class="proudct-price">$150</button>
 
-      <p class="proudact-name">
-    Suspendisse et.
-   </p>
-      <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i style="    color: #7d7c7ca6;
-" class="fa fa-star rate- " aria-hidden="true"></i>
-<br>
-<br>
-<i class="fas fa-heart addicon"></i>
-   <i class="fas fa-shopping-cart addicon"></i>
-   <i class="fas fa-share-alt addicon"></i>
-   <br>
-<br>
-      </div>
-      <div class="col-xl-3">
-      <img src="{{asset('img/img4.jpeg')}}" class="secttion3-img">
-      <button class="proudct-price">$150</button>
-
-      <p class="proudact-name">
-    Suspendisse et.
-   </p>
-
-      <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i style="    color: #7d7c7ca6;
-" class="fa fa-star rate- " aria-hidden="true"></i>
-<br>
-<br>
-<i class="fas fa-heart addicon"></i>
-   <i class="fas fa-shopping-cart addicon"></i>
-   <i class="fas fa-share-alt addicon"></i>
-   <br>
-<br>
-
-      </div>
-    </div>
-  </div>
-</div>
- 
-   <div class="container mt-5 pt-5">
+    <div class="container mt-5 pt-5">
     <div class="row">
       <div class="col-xl-6 py-2">
         <div class="first-photo">
@@ -209,17 +144,21 @@
 
 <!-- start trend section  -->
 
-<div class="section5">
-<div class="title_lines "> Trending Item  
+ <div class="section5 pt-5">
+ <div class="title_lines "> Trending ITEM  
 </div>
-
-
-  <div class="container mt-5 pt-5">
+<!-- <div class="line-title"></div> -->
+<!-- <div class="line"></div> -->
+ </div>
+ <div id="container-res1" class="container">
     <div class="row pt-3">
-      <div class="col-xl-3">
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <button class="proudct-price">$150</button>
       <img src="{{asset('img/img4.jpeg')}}" class="secttion3-img">
-      
-      <button class="proudct-price">$150</button>
+      <!-- <div class="card1"> -->
+
+        
+      <!-- </div> -->
       <p class="proudact-name">
         Suspendisse et.
       </p>
@@ -238,82 +177,17 @@
 <br>
 
       </div>
-      <div class="col-xl-3">
-        
-      <img src="{{asset('img/img4.jpeg')}}" class="secttion3-img">
-      <button class="proudct-price">$150</button>
 
-      <p class="proudact-name">
-    Suspendisse et.
-   </p>
-      <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i style="    color: #7d7c7ca6;
-" class="fa fa-star rate- " aria-hidden="true"></i>
-<br>
-<br>
-<i class="fas fa-heart addicon"></i>
-   <i class="fas fa-shopping-cart addicon"></i>
-   <i class="fas fa-share-alt addicon"></i>
-   <br>
-<br>
-      </div>
-      <div class="col-xl-3">
-      <img src="{{asset('img/img4.jpeg')}}" class="secttion3-img">
-      <button class="proudct-price">$150</button>
-
-      <p class="proudact-name">
-    Suspendisse et.
-   </p>
-      <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i style="    color: #7d7c7ca6;
-" class="fa fa-star rate- " aria-hidden="true"></i>
-<br>
-<br>
-<i class="fas fa-heart addicon"></i>
-   <i class="fas fa-shopping-cart addicon"></i>
-   <i class="fas fa-share-alt addicon"></i>
-   <br>
-<br>
-      </div>
-      <div class="col-xl-3">
-      <img src="{{asset('img/img4.jpeg')}}" class="secttion3-img">
-      <button class="proudct-price">$150</button>
-
-      <p class="proudact-name">
-    Suspendisse et.
-   </p>
-
-      <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i  class="fa fa-star icon" aria-hidden="true"></i>
-   <i style="    color: #7d7c7ca6;
-" class="fa fa-star rate- " aria-hidden="true"></i>
-<br>
-<br>
-<i class="fas fa-heart addicon"></i>
-   <i class="fas fa-shopping-cart addicon"></i>
-   <i class="fas fa-share-alt addicon"></i>
-   <br>
-<br>
-
-      </div>
-    </div>
-  </div>
 </div>
-<div class="section5-btn">
+<div class="trend-button">
 
-  <button>load more</button>
+<button>LOAD MORE</button>
+</div>
+</div>
 </div>
 </div>
 
-<!-- end trend section  -->
+ <!-- end trend section  -->
 <div class="attcphoto ">
 
   <div class="container" id="attcsection">
@@ -346,10 +220,10 @@
 
 
 
-<div class="container my-5 py-5">
+<div id="container-res" class="container mb-5 pb-5">
   <div class="row">
-    <div class="col-md-4 pt-3">
-      <img src="{{asset('img/img4.jpeg')}}" class="w-100 ">
+    <div class="col-xl-3 col-lg-4 col-md-6" >
+      <img src="{{asset('img/img4.jpeg')}}" class="blog-photo">
       <h2 class="blog-title text-dark pt-3 fs-4">First Post Here </h2>
       <p class="blog-desc pt-3">
         Lorem ipsum dolor sit amet consectetur    <br>
@@ -357,10 +231,10 @@
         Lorem ipsum dolor sit amet consectetur.<br>
         consectetur.
       </p>
-      <button class="blog-button mt-3">READ MORE</button>
+      <button class="blog-button my-3">READ MORE</button>
     </div>
-    <div class="col-md-4  pt-3">
-      <img src="{{asset('img/img4.jpeg')}}" class="w-100 ">
+    <div class="col-xl-3 col-lg-4 col-md-6" id="">
+      <img src="{{asset('img/img4.jpeg')}}" class="blog-photo ">
       <h2 class="blog-title text-dark pt-3 fs-4">First Post Here </h2>
       <p class="blog-desc pt-3">
         Lorem ipsum dolor sit amet consectetur    <br>
@@ -368,10 +242,10 @@
         Lorem ipsum dolor sit amet consectetur.<br>
         consectetur.
       </p>
-      <button class="blog-button mt-3">READ MORE</button>
+      <button class="blog-button my-3">READ MORE</button>
     </div>
-    <div class="col-md-4  pt-3">
-      <img src="{{asset('img/img4.jpeg')}}" class="w-100 ">
+    <div class="col-xl-3 col-lg-4 col-md-6 " id="">
+      <img src="{{asset('img/img4.jpeg')}}" class="blog-photo ">
       <h2 class="blog-title text-dark pt-3 fs-4">First Post Here </h2>
       <p class="blog-desc pt-3">
         Lorem ipsum dolor sit amet consectetur    <br>
@@ -379,10 +253,10 @@
         Lorem ipsum dolor sit amet consectetur.<br>
         consectetur.
       </p>
-      <button class="blog-button mt-3">READ MORE</button>
+      <button class="blog-button my-3">READ MORE</button>
     </div>
-    <div class="col-md-4  pt-3">
-      <img src="{{asset('img/img4.jpeg')}}" class="w-100 ">
+    <div class="col-xl-3 col-lg-4 col-md-6" id="">
+      <img src="{{asset('img/img4.jpeg')}}" class="blog-photo ">
       <h2 class="blog-title text-dark pt-3 fs-4">First Post Here </h2>
       <p class="blog-desc pt-3">
         Lorem ipsum dolor sit amet consectetur    <br>
@@ -390,10 +264,10 @@
         Lorem ipsum dolor sit amet consectetur.<br>
         consectetur.
       </p>
-      <button class="blog-button mt-3">READ MORE</button>
+      <button class="blog-button my-3">READ MORE</button>
     </div>
-    <div class="col-md-4  pt-3">
-      <img src="{{asset('img/img4.jpeg')}}" class="w-100 ">
+    <div class="col-xl-3 col-lg-4 col-md-6" id="">
+      <img src="{{asset('img/img4.jpeg')}}" class="blog-photo ">
       <h2 class="blog-title text-dark pt-3 fs-4">First Post Here </h2>
       <p class="blog-desc pt-3">
         Lorem ipsum dolor sit amet consectetur  <br>
@@ -401,12 +275,13 @@
         Lorem ipsum dolor sit amet consectetur.<br>
         consectetur.
       </p>
-      <button class="blog-button mt-3">READ MORE</button>
+      <button class="blog-button my-3">READ MORE</button>
     </div>
   </div>
  </div>
+</div>
 
-
+</div>
 
  <script>
   let bg = document.querySelector("#bg-dark");
@@ -414,7 +289,7 @@ let mainphoto = document.querySelector("#collection-photo");
 mainphoto.addEventListener("click" , function(){
   bg.classList.toggle("hidden");
   // bg.style.opacity = "0.6";
-  // bg.classList.add("hidden");
+  // bg.classList.add("hidden");a
   // console.log("sadas");
 
   // bg.style.display= "block";

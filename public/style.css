@@ -23,7 +23,8 @@
 }
 li a{
     text-decoration: none;
-    color: black;
+    color: #80808085;
+
 
 }
 
@@ -35,6 +36,8 @@ li a{
 li{
     LIST-STYLE: NONE;
     LIST-STYLE: NONE;
+    color: #8080808a;
+
     padding: 0 15px;
 
 }
@@ -81,8 +84,8 @@ input::placeholder{
     POSITION: absolute;
     right: 3%;
     top: 17%;
-    font-size: 21px;
-    color: gray    ;
+    font-size: 17px;
+    color: #8080808a;
     border-left: 3px solid #eae8e8
     ;
     padding: 5px;
@@ -126,7 +129,8 @@ input::placeholder{
         right: 4%;
         top: 19%;
         font-size: 21px;
-        color: gray;
+        color: #8080804a;
+
         border-left: 3px solid #eae8e8;
         padding: 5px;
     }
@@ -134,6 +138,7 @@ input::placeholder{
 input::placeholder{
     font-size: 12px;
     padding-left:0;
+
   
   }
     
@@ -163,7 +168,8 @@ input::placeholder{
   }
   label.logo{
     font-size: 35px;
-    font-weight: bold;
+    font-style: italic;
+
     color:white;
     padding:  0 100px;
     line-height: 80px;
@@ -179,25 +185,24 @@ input::placeholder{
   }
   nav li{
     display: inline-block;
-    margin: 0 8px;
+    /* margin: 0 8px; */
     line-height: 80px;
   }
   nav a{
     text-decoration: none;
     color: white;
-    font-size: 18px;
-    text-transform: uppercase;
-    border: 1px solid transparent;
+    font-size: 16px;
+     border: 1px solid transparent;
     padding: 7px 10px;
     border-radius: 3px;
   
   
   }
-  a.active{
-      background:#d36fcd;
+  a.change{
+      color:#d36fcd;
   
   }
-  a.active,a:hover{
+  a.change,a:hover{
      transition: .5s;
     /* background:#d36fcd; */
   
@@ -212,6 +217,35 @@ input::placeholder{
     display: none;
   
   }
+
+
+  #first-list{
+    display: flex;
+    justify-content: end;
+    
+  }
+
+#free-title {
+  color: #8080808a;
+
+}
+
+  @media (max-width: 991px){
+   #first-list{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    
+     }
+   .title-one{
+    justify-content: center;
+    display: flex;
+    
+
+  }
+
+  }
+  
   @media (max-width: 1048){
     label.logo{
       font-size: 32px;
@@ -261,7 +295,7 @@ input::placeholder{
     font-size: 20px;
   
   }
-  a.active,a:hover{
+  a.change,a:hover{
     border: none;
     /* color: #3498db; */
   }
@@ -300,7 +334,7 @@ input::placeholder{
 
   footer{
     background:#1d1d1d;
-    margin-top: 16vw;
+    /* margin-top: 16vw; */
 
 
 }
@@ -312,9 +346,13 @@ p{
 }
 
 input{
+    /* background-color: transparent;
+    border: 1px solid white;
+    padding: 6px 13px; */
     background-color: transparent;
     border: 1px solid white;
-    padding: 5px;
+    padding: 6px 0;
+    width: 81%;
 
 }
 
@@ -324,26 +362,36 @@ input::placeholder{
 }
 
 #subscribe-btn{
-    color: white;
-    background: #d36fcd;
-    border: none;
-    width: 66%;
-    padding: 6px 0;
-    font-weight: bold;
+  color: white;
+  background: #d02ac6;
+  border: none;
+  width: 81%;
+  padding: 6px 0;
+  font-weight: bold;
 }
 
 
 #icon{
     background: #7d7c7c;
     color:black;
-    padding:6px;
+  
+    padding: 7px 7px;
 
 }
 
 
 
+.footer-section .boxes{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+ }
 
+.box{
+  flex-basis: 30%;
+}
 
+ 
 /* section2  */
  
 
@@ -458,9 +506,20 @@ input::placeholder{
 } 
   
   .secttion3-img{
+    width: 262px;
+    height: 349px;
+  }
+
+  .card1{
+    background-image: url(img/img4.jpeg);
     width: 250px;
     height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
+
+
 
 
   .category-list{
@@ -504,7 +563,7 @@ input::placeholder{
     color: #7d7c7ca6;
     border: 1px solid #7d7c7c5e;
     border-radius: 20px;
-    padding: 7px;
+    padding: 9px;
 
 
   }
@@ -523,16 +582,14 @@ input::placeholder{
   } */
 
   .proudct-price{
-    margin-left: -88px;
-    /* left: 190px; */
+    margin-top: 1px;
     border: none;
+    margin-left: 174px;
     color: white;
-    /* bottom: 416px; */
     background: black;
+    position: absolute;
     width: 87px;
     padding: 4px 0px;
-    position: ABSOLUTE;
-
 
     }
     .section3{
@@ -542,8 +599,9 @@ input::placeholder{
  
   DISPLAY: FLEX;
   JUSTIFY-CONTENT: center;
-  margin-top: 70px;
+  margin-top: 15px;
 
+ 
 }
 .title{
   text-align: center;
@@ -596,11 +654,11 @@ input::placeholder{
     
     
       .proudct-price {
-        margin-left: 162px;
+        margin-left: 174px;
         /* left: 190px; */
         border: none;
         color: white;
-        margin-top: -326px;
+        /* margin-top: -326px; */
         /* bottom: 62%; */
         background: black;
         width: 87px;
@@ -989,16 +1047,20 @@ input::placeholder{
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
- height: 88vh;
+ height: 94vh;
  background-attachment: fixed;
  margin-top: 70px;
 
 } 
 
 #attcqute{
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   font-size: 2rem;
   color: #d36fcd;
+  /* margin: 80px 0; */
+  margin-top: 46px;
+
+
 }
 .attcphoto1{
   width:160px;
@@ -1015,26 +1077,79 @@ input::placeholder{
   margin-top: 70px;
 }
 .blog-desc{
-   font-size: 17px;
-  font-weight: bold;
-}
+  width: 268px;
+  font-size: 15px;
+ }
 
 .blog-button{
   border:1px solid black;
-  width: 200px;
+  width: 131px;
   padding: 8px 0;
   background: none;
 }
 
+ 
+
+
+
+
+.blog-photo{
+  height: 35vh;
+  width: 264px;
+}
+
+.trend-button
+{
+  text-align: center;
+}
+.trend-button>button{
+  
+  BORDER: 1px solid black;
+  background: transparent;
+  width: 174px;
+  padding: 10px 0;
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 18px;
+  margin-bottom: 90px;
+}
 
 
 
 
 
+@media only screen and (min-width: 200px) and (max-width:1200px) {
+  
+  #container-res1{
+    text-align: center;
+  }
+  
+  .blog-desc {
+    width: auto;
+    font-size: 15px;
+}
+
+
+ }
 
 
 
 
+@media only screen and (min-width: 200px) and (max-width:992px) {
+  
+  #container-res{
+    text-align: center;
+  }
+  
+  .blog-desc {
+    width: auto;
+    font-size: 15px;
+}
+
+
+
+}
 
 
 
@@ -1050,20 +1165,27 @@ input::placeholder{
     font-family: arial;
 }
 .title_lines:before, .title_lines:after {
-    position: absolute;
-    top: 51%;
-    overflow: hidden;
-    width: 48%;
-    height: 1px;
-    content: '\a0';
-    background-color: #cccccc;
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 35%;
+  height: 1px;
+  content: '\a0';
+  background-color: #cccccc;
     margin-left: 2%;
 }
 .title_lines:before {
-    margin-left: -50%;
-    text-align: right;
+  margin-left: -37%;
+  text-align: right;
 }
 
-/* body {
-    padding: 50px 0;
-} */
+ 
+/* 
+git add .
+
+git commit -m "main"
+
+git push origin main 
+
+
+ */

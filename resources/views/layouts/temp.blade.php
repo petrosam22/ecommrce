@@ -9,13 +9,13 @@
         <div class="row">
             <div class="col-lg-4">
 
-                <li><a href="#">Free Shipping on All orders over $75!</a></li>
+                <li class="title-one" id="free-title"><a href="">Free Shipping on All orders over $75!</a></li>
     </div>
 
 
 
 
-    <div class="col-lg-8 d-flex justify-content-end">
+    <div id="first-list" class="col-lg-8 ">
 
         <li><a href="#">My Account</a></li>
         <li><a href="#"></a>Wishlist</li>
@@ -26,8 +26,16 @@
             <a href="">EUR</a>
           </div>
          </li>
-        <li id="shop"><a href="#"></a>   <i  class="fas fa-shopping-cart"></i>    my craft</li>
+         <i style=" color: #d36fcd;   margin-top: 5px;" class="fas fa-shopping-cart"></i>
+        <li id="shop"><a href="#"></a>       My Craft</li>
+      <li class="text-dark">    
         
+      @if(Route::has('login'))
+
+      
+        {{Auth::user()->name}}</li>
+
+@endif
     </div>
 
 </div>
@@ -53,7 +61,7 @@
                 Fashion 
             </label>
     <ul class="desine">
-        <li><a class="active" href="#">Home</a></li>
+        <li><a class="change" href="#">Home</a></li>
       <li><a href="#">Woman</a></li>
       <li><a href="#">Men</a></li>
       <li><a href="#">Footwear</a></li>
@@ -79,9 +87,9 @@
 
 <footer>
 
-    <div class="container ">
+    <div id="container-res" class="container ">
         <div class="row sm">
-                <div class="col-lg-3 mt-5 ">
+                <div class="col-xl-3 col-lg-4 col-md-6 ">
                     <h5 class="text-light my-3">SHOPS</h5>
                     <p >New In</p>
                     <p>Women</p>
@@ -94,7 +102,7 @@
 
                     
                 </div>
-                <div class="col-lg-3  mt-5">
+                <div class=" col-xl-3 col-lg-4 col-md-6">
                     <h5 class="text-light my-3">INFORMATION</h5>
                     <p>About Us</p>
                     <p>Customer Service</p>
@@ -106,7 +114,7 @@
                     <p>Blog</p>
 
                  </div>
-                <div class="col-lg-3  mt-5">
+                <div class="col-xl-3 col-lg-4 col-md-6">
                 <h5 class="text-light my-3">CUSTOMER SERVICE</h5>
                 <p>Search Terms</p>
                 <p>Advanced Search</p>
@@ -116,10 +124,8 @@
                 <p>Help & FAQs</p>
                 <p>Consultant</p>
                 <p>Store Locations</p>
-          
-
                   </div>
-                <div class="col-lg-3  mt-5">
+                <div class="col-xl-3 col-lg-4 col-md-6">
               
                 <h5 class="text-light my-3">NEWSLETTER</h5>
                 <p class="mt-2">Sign Up For News Letter</p>
@@ -141,6 +147,9 @@
         </div>
  
                 </footer>
+
+
+      
 
 
   

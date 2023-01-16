@@ -1,0 +1,23 @@
+
+
+
+
+     /* reg page  */
+
+     .reg-name{
+        width: 270px !important;
+        border: 1px solid gray !important;
+        padding: 3px 0!important;
+        background: transparent!important;
+        margin-left: 54px!important;
+        margin-bottom: 32px!important;
+      }
+
+     .reg-email{
+        width: 270px !important;
+        border: 1px solid gray !important;
+        padding: 3px 0!important;
+        background: transparent!important;
+        margin-left: 83px;
+        margin-bottom: 32px!important;
+      }
