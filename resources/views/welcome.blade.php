@@ -26,7 +26,7 @@
   </button>
 </div>
 
-<div class="container mt-5 text-end">
+<div class="container mt-4 text-end">
     <div class="row">
         <div class="col-lg-6 text-start">
           <div id="bg-dark" class="bg-dark hidden">
@@ -36,10 +36,10 @@
           </div>
             <img  id="collection-photo" src="{{asset('img/img5.jpeg')}}" class="h-40 rounded">
   
-              <p class="collection-title desine">Hot Collection</p>
+              <p class="collection-title ">Hot Collection</p>
               <h1 class="text-dark mb-3">New Trend For Women</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea libero  ipsa,<br> iste aperiam ipsum ipsam quis. Corporis porro nam fuga inventore <br>nesciunt omnis rerum.</p>
-              <button class="border border-dark bg-transparent py-2 px-5">Shop Now</button>
+              <button class=" bg-transparent py-2 px-4" style="color:#b3afaf; border:1px solid #989292">Shop Now</button>
              </div>
         <div class="col-lg-5  " id="collection-multiphoto">
         <img id="collection-photo1" src="{{asset('img/img4.jpeg')}}" class="  rounded ">
@@ -66,13 +66,13 @@
   <H1 class="feat">     
  FEATURED ITEM  
 </H1>
-  </div> -->
-  <div class="title_lines "> FEATURED ITEM  
+  </div> -->   
+  <div class="title_lines "> Featured Items
 </div>
 <!-- <div class="line-title"></div> -->
 <!-- <div class="line"></div> -->
  </div>
-  <div class="section3-content">
+  <div class="section3-content  mb-4">
        <li>All</li>
       <li>Men</li>
       <li class="bg-color">Woman</li>
@@ -81,15 +81,19 @@
   </div>
   <div id="container-res1" class="container">
     <div class="row pt-3">
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <button class="proudct-price">$150</button>
-      <img src="{{asset('img/img4.jpeg')}}" class="secttion3-img">
-      <!-- <div class="card1"> -->
+@foreach($product as $product)
 
-        
-      <!-- </div> -->
-      <p class="proudact-name">
-        Suspendisse et.
+<div class="col-xl-3 col-lg-4 col-md-6">
+        <button class="proudct-price">
+          {{$product->price}}
+        </button>
+        <a href="product/show/{{$product->id}}"> 
+      <img src="{{asset($product->featured)}}"  class="secttion3-img">
+</a>
+
+        <p class="proudact-name  m-0 pb-1">
+{{$product->content}}
+
       </p>
       <i  class="fa fa-star icon" aria-hidden="true"></i>
    <i  class="fa fa-star icon" aria-hidden="true"></i>
@@ -97,10 +101,14 @@
    <i  class="fa fa-star icon" aria-hidden="true"></i>
    <i style="    color: #7d7c7ca6;
 " class="fa fa-star rate- " aria-hidden="true"></i>
+
 <br>
-<br>
+ 
 <i class="fas fa-heart addicon"></i>
-   <i class="fas fa-shopping-cart addicon"></i>
+   <a href="{{url('/cart')}}">
+
+     <i class="fas fa-shopping-cart addicon"></i>
+    </a>
    <i class="fas fa-share-alt addicon"></i>
 <br>
 <br>
@@ -108,7 +116,8 @@
       </div>
 
 
-    <div class="container mt-5 pt-5">
+@endforeach
+     <div class="container mt-5 pt-5">
     <div class="row">
       <div class="col-xl-6 py-2">
         <div class="first-photo">
@@ -144,23 +153,32 @@
 
 <!-- start trend section  -->
 
- <div class="section5 pt-5">
- <div class="title_lines "> Trending ITEM  
+<div class="section5 pt-5">
+ <div class="title_lines "> Trending Item
 </div>
 <!-- <div class="line-title"></div> -->
 <!-- <div class="line"></div> -->
  </div>
  <div id="container-res1" class="container">
     <div class="row pt-3">
+        @foreach($test as $test)
       <div class="col-xl-3 col-lg-4 col-md-6">
-        <button class="proudct-price">$150</button>
-      <img src="{{asset('img/img4.jpeg')}}" class="secttion3-img">
+        <button class="proudct-price">{{$test->price}}$</button>
+        <a href="product/show/{{$test->id}}"> 
+      <img src="{{asset($test->featured)}}"  class="secttion3-img">
+</a>
+
       <!-- <div class="card1"> -->
+
 
         
       <!-- </div> -->
-      <p class="proudact-name">
-        Suspendisse et.
+      <p class="proudact-name   m-0 pb-1">
+    {{$test->content}}
+      </p>
+      <!-- </div> -->
+      <p class="proudact-name   m-0 pb-1">
+    {{$test->category->name}}
       </p>
       <i  class="fa fa-star icon" aria-hidden="true"></i>
    <i  class="fa fa-star icon" aria-hidden="true"></i>
@@ -169,7 +187,7 @@
    <i style="    color: #7d7c7ca6;
 " class="fa fa-star rate- " aria-hidden="true"></i>
 <br>
-<br>
+
 <i class="fas fa-heart addicon"></i>
    <i class="fas fa-shopping-cart addicon"></i>
    <i class="fas fa-share-alt addicon"></i>
@@ -178,7 +196,13 @@
 
       </div>
 
+ 
+      @endforeach
 </div>
+
+
+ 
+ 
 <div class="trend-button">
 
 <button>LOAD MORE</button>
@@ -192,7 +216,9 @@
 
   <div class="container" id="attcsection">
   <i id="attcqute" class="fas fa-quote-left"></i>
-     <H1 class="text-light fs-3 lh-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio impedit quia deserunt corporis.<br>
+     <H1 class="text-light fs-4   mt-4">
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio impedit quia deserunt
+       corporis"<br>
     Lorem ipsum dolor sit amet consectetur adipisicing. </H1>
      <img src="{{asset('img/peter.jpg')}}" class="attcphoto1 ">
      <p class="text-light fs-5">
@@ -220,63 +246,25 @@
 
 
 
-<div id="container-res" class="container mb-5 pb-5">
+<div id="container-res" class="container mb-5 pb-5" style="    padding-top: 25px;">
   <div class="row">
+    @foreach($posts as $post)
     <div class="col-xl-3 col-lg-4 col-md-6" >
-      <img src="{{asset('img/img4.jpeg')}}" class="blog-photo">
-      <h2 class="blog-title text-dark pt-3 fs-4">First Post Here </h2>
-      <p class="blog-desc pt-3">
-        Lorem ipsum dolor sit amet consectetur    <br>
-        Lorem ipsum dolor sit amet consectetur.<br>
-        Lorem ipsum dolor sit amet consectetur.<br>
-        consectetur.
+      <img src="{{asset($post->photo)}}" class="blog-photo">
+      <p class="blog-title   ">{{$post->title}} </p>
+      <p class="blog-desc">
+      {{Str::limit($post->description, 30)}}
+      <br>
+
+ 
+    
       </p>
-      <button class="blog-button my-3">READ MORE</button>
+      <button class="blog-button fw-bold">
+      <a class="text-decoration-none text-dark" href="/post/show/{{$post->id}}">READ MORE</a>
+
+      </button>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6" id="">
-      <img src="{{asset('img/img4.jpeg')}}" class="blog-photo ">
-      <h2 class="blog-title text-dark pt-3 fs-4">First Post Here </h2>
-      <p class="blog-desc pt-3">
-        Lorem ipsum dolor sit amet consectetur    <br>
-        Lorem ipsum dolor sit amet consectetur.<br>
-        Lorem ipsum dolor sit amet consectetur.<br>
-        consectetur.
-      </p>
-      <button class="blog-button my-3">READ MORE</button>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6 " id="">
-      <img src="{{asset('img/img4.jpeg')}}" class="blog-photo ">
-      <h2 class="blog-title text-dark pt-3 fs-4">First Post Here </h2>
-      <p class="blog-desc pt-3">
-        Lorem ipsum dolor sit amet consectetur    <br>
-        Lorem ipsum dolor sit amet consectetur.<br>
-        Lorem ipsum dolor sit amet consectetur.<br>
-        consectetur.
-      </p>
-      <button class="blog-button my-3">READ MORE</button>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6" id="">
-      <img src="{{asset('img/img4.jpeg')}}" class="blog-photo ">
-      <h2 class="blog-title text-dark pt-3 fs-4">First Post Here </h2>
-      <p class="blog-desc pt-3">
-        Lorem ipsum dolor sit amet consectetur    <br>
-        Lorem ipsum dolor sit amet consectetur.<br>
-        Lorem ipsum dolor sit amet consectetur.<br>
-        consectetur.
-      </p>
-      <button class="blog-button my-3">READ MORE</button>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6" id="">
-      <img src="{{asset('img/img4.jpeg')}}" class="blog-photo ">
-      <h2 class="blog-title text-dark pt-3 fs-4">First Post Here </h2>
-      <p class="blog-desc pt-3">
-        Lorem ipsum dolor sit amet consectetur  <br>
-        Lorem ipsum dolor sit amet consectetur.<br>
-        Lorem ipsum dolor sit amet consectetur.<br>
-        consectetur.
-      </p>
-      <button class="blog-button my-3">READ MORE</button>
-    </div>
+     @endforeach
   </div>
  </div>
 </div>

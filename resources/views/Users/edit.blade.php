@@ -6,8 +6,10 @@
  <title>Rigster page</title>
  
 <div class="container my-5">
-    <form action="{{url('update/user')}}" method="POST">
+    <form action="{{url('update/user')}}" method="post">
         @csrf
+        {{ method_field('POST') }}
+
         {{-- cross site requet forign --}}
         <div class="mb-3">
             <label class="form-label">Name</label>
@@ -26,7 +28,7 @@
         <div class="mb-3">
         <label class="form-label">Selcet Role</label>
         <select class="form-select" aria-label="Default select example" value="{{$user->tybe}}" name= "tybe">
-            <option value="Modrater">Modrater</option>
+            <option value="moderator">moderator</option>
             <option value="Admin">Admin</option>
             <option value="User">User</option>
           </select>
@@ -37,5 +39,8 @@
 </div>
 
 
-
 @endsection
+
+<!-- 
+
+ -->

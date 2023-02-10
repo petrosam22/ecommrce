@@ -19,3 +19,14 @@ drop.addEventListener("click" , function(){
 // bg-dark
 // collection-photo
 
+
+
+ 
+
+ 
+let droplog = document.querySelector("#drpologin");
+
+droplog.addEventListener("click" , function(){
+ document.getElementById("dorpreg").classList.toggle("drop-auth");
+});
+

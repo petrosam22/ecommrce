@@ -4,12 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Profile;
+
 use Auth;
 use Session;
 class AuthController extends Controller
 {
 
     public function getRegiser(){
+        // $test = user::find(1)->profile          ;
+ 
+// dd($test);
         return view("Users.register");
     }
 
@@ -25,7 +30,10 @@ class AuthController extends Controller
         $user = new User();
         $user->create($data);
 
-        // dd($user);
+
+
+       
+
 Session::flash('msg' ,"Your Account Created");        
  
 
@@ -35,15 +43,20 @@ Session::flash('msg' ,"Your Account Created");
 
     }
     public function getlogin(Request $request){
+
         return view("Users.login");
     }
 
     public function handleLogin(Request $request){
         if(Auth::attempt(['email'=>$request->email , 'password'=>$request->password])){
-            return redirect("/");
+            return redirect("/profile/create");
         }else{
-            return "you are not autherized";
+            Session::flash("error" , "Your Account is Not found");
+            return redirect("/user/login");
+
+            // return "you are not autherized";
         }
+
     }
     
     
@@ -57,7 +70,7 @@ Session::flash('msg' ,"Your Account Created");
 
             function edit($id){
                 //return view form of book with its data
-                $user = User::findorfail($id);
+            $user = User::findorfail($id);
                 return view("Users.edit",["user"=>$user]);
             }
 
@@ -75,10 +88,18 @@ Session::flash('msg' ,"Your Account Created");
 
                 // dd($user);
 
-                return view("app");
+
+                return redirect('/dashbord');
 
 
 
+            }
+
+            public function delete ($id){
+                $user = User::findorfail($id);
+                $user->delete();
+
+                return redirect("/all/user");
             }
 
   

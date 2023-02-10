@@ -6,7 +6,8 @@
 }
 
 .desine{
-    margin: 0;
+      margin: 0 80px;
+    ;
  
 
 
@@ -36,7 +37,8 @@ li a{
 li{
     LIST-STYLE: NONE;
     LIST-STYLE: NONE;
-    color: #8080808a;
+    color: #504d4d;
+
 
     padding: 0 15px;
 
@@ -80,6 +82,9 @@ input::placeholder{
 .show {
     display:none;
 }
+.drop-auth {
+    display:none;
+}
 #search{
     POSITION: absolute;
     right: 3%;
@@ -106,6 +111,43 @@ input::placeholder{
 #menu{
      position: absolute;
     top: 29px;
+}
+#regster{
+  position: relative;
+}
+#dorpreg{
+  position: absolute;
+  top: 35px;
+  left: 3%;
+}
+.Logout{
+  padding: 3px 25px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #80808085;
+
+}
+.login{
+  border: 1px solid black;
+  padding: 3px 33px;
+  color: black !important;
+  margin: 0;
+
+}
+#drpologin{
+  padding-top: 7px;
+  padding-left: 7px;
+}
+@media (max-width: 991px){
+
+  #dorpreg {
+    position: absolute;
+    top: 33px;
+    left: 7%;
+}
+#drpologin{
+  padding-top: 7px;
+}
 }
 
 
@@ -159,7 +201,7 @@ input::placeholder{
     margin: 0;
     box-sizing: border-box;
   }
-  nav{
+  .navbar{
     height: 80px ;
     width: 100%;
     background-color: black;
@@ -183,12 +225,12 @@ input::placeholder{
     margin-bottom: 1rem;
 
   }
-  nav li{
+  .navbar li{
     display: inline-block;
     /* margin: 0 8px; */
     line-height: 80px;
   }
-  nav a{
+  .navbar a{
     text-decoration: none;
     color: white;
     font-size: 16px;
@@ -207,7 +249,7 @@ input::placeholder{
     /* background:#d36fcd; */
   
   }
-  nav #icon {
+  .navbar #icon {
     color: white;
     font-size: 30px;
     line-height: 80px;
@@ -222,6 +264,8 @@ input::placeholder{
   #first-list{
     display: flex;
     justify-content: end;
+    align-items: self-end;
+
     
   }
 
@@ -235,6 +279,8 @@ input::placeholder{
     display: flex;
     justify-content: center;
     margin-top: 16px;
+    align-items: baseline;
+
     
      }
    .title-one{
@@ -251,16 +297,16 @@ input::placeholder{
       font-size: 32px;
       padding-left: 60px;
     }
-    nav>ul {
+    .navbar>ul {
       margin-right: 20px;
   
     }
-    nav a{
+    .navbar a{
       font-size: 17px;
     }
   }
   @media (max-width: 1330px){
-    nav #icon {
+    .navbar #icon {
       display: block;
       margin-top: 20px;
   
@@ -268,7 +314,7 @@ input::placeholder{
 
     
   
-    nav ul{
+    .navbar ul{
       position: absolute;
       /* width: 880px; */
       width: 100%;
@@ -286,12 +332,12 @@ input::placeholder{
   
   
   
-   nav li {
+    .navbar li {
     display: block;
     margin:  30px 0 ;
     line-height: 30px;
   }
-  nav a{
+  .navbar a{
     font-size: 20px;
   
   }
@@ -299,19 +345,22 @@ input::placeholder{
     border: none;
     /* color: #3498db; */
   }
-  nav {
+  .navbar {
   
     background-color: black;
     z-index: 99999;
+    align-items: baseline;
+
     position: sticky;
 } 
 
-  nav ul.change{
+.navbar ul.change{
    /* left:0; */
     /* top: 240px; */
     top: 80px;
    /* left: ; */
-   left: 0px;
+   left: -80px;
+
   
   
   }
@@ -341,9 +390,49 @@ input::placeholder{
 
 
 p{
-   color: #7d7c7c;
-   font-size:18px;
+   color: #b3afaf;
+   font-size:1rem;
 }
+/* .visa{
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  color: #b3afaf;
+  padding: 6px 0;
+  align-items: baseline;
+
+
+  
+} */
+ .visa-pay{
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 21px;
+  font-style: italic;
+  color: #b3afaf;
+
+}
+ .paypal-pay{
+  font-size: 1.3rem;
+  font-weight: bold;
+  /* text-transform: uppercase; */
+  padding: 0 21px;
+  font-style: italic;
+  color: #b3afaf;
+
+
+}
+
+ .master-pay{
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0 21px;
+  font-style: italic;
+  color: #b3afaf;
+}
+
+
 
 input{
     /* background-color: transparent;
@@ -365,23 +454,37 @@ input::placeholder{
   color: white;
   background: #d02ac6;
   border: none;
-  width: 81%;
+  width: 90%;
   padding: 6px 0;
   font-weight: bold;
 }
 
-
+#email{
+  width: 90%;
+}
 #icon{
     background: #7d7c7c;
     color:black;
   
     padding: 7px 7px;
+    margin: 0 2px;
+
 
 }
 
+@media only screen and (max-width: 900px) {
 
+  .visa{
+    background-color: red;
+    display: block;
+    /* justify-content: space-around; */
+    color: #7d7c7c;
+    padding: 6px 0;
+    align-items: baseline;
+  }
+}
 
-.footer-section .boxes{
+/* .footer-section .boxes{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -389,7 +492,7 @@ input::placeholder{
 
 .box{
   flex-basis: 30%;
-}
+} */
 
  
 /* section2  */
@@ -547,7 +650,8 @@ input::placeholder{
 
   .proudact-name{
     font-size: 20px;
-    color: #7d7c7c;
+    color: #4c4848;
+
 
 
   }
@@ -563,7 +667,9 @@ input::placeholder{
     color: #7d7c7ca6;
     border: 1px solid #7d7c7c5e;
     border-radius: 20px;
-    padding: 9px;
+    padding: 9px;   
+     margin-top: 9px;
+
 
 
   }
@@ -1047,9 +1153,9 @@ input::placeholder{
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
- height: 94vh;
+ height: 90vh;
  background-attachment: fixed;
- margin-top: 70px;
+ margin-top: -2px;
 
 } 
 
@@ -1058,12 +1164,17 @@ input::placeholder{
   font-size: 2rem;
   color: #d36fcd;
   /* margin: 80px 0; */
-  margin-top: 46px;
+  margin-bottom: 31px;
+
+  margin-top: 124px;
+
 
 
 }
 .attcphoto1{
-  width:160px;
+  width:70px;
+  margin-top: 50px;
+
 }
 #attcsection{
   text-align: center;
@@ -1078,7 +1189,9 @@ input::placeholder{
 }
 .blog-desc{
   width: 268px;
+  padding: 0;
   font-size: 15px;
+  margin: 0;
  }
 
 .blog-button{
@@ -1086,8 +1199,18 @@ input::placeholder{
   width: 131px;
   padding: 8px 0;
   background: none;
-}
+  margin: 12px 0;
 
+}
+.blog-title{
+  color: #5b5353;
+  font-size: 1.5rem;
+  margin-top: 15px;
+  font-weight: 400;
+  padding: 0;
+  width: 307px;
+  margin: 9px 0;
+}
  
 
 
@@ -1104,14 +1227,14 @@ input::placeholder{
 }
 .trend-button>button{
   
-  BORDER: 1px solid black;
+  BORDER: 1px solid #8e8383;
   background: transparent;
-  width: 174px;
   padding: 10px 0;
   color: black;
-  font-weight: bold;
   font-size: 17px;
-  margin-top: 18px;
+  font-weight: bold;
+  width: 208px;
+   margin-top: 18px;
   margin-bottom: 90px;
 }
 
@@ -1189,3 +1312,55 @@ git push origin main
 
 
  */
+
+
+      .delete a{
+          width: 102px;
+    text-decoration: none;
+    color: white;
+    padding: 14px 28px;
+    background: black;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 54px 9px;
+         }
+ .cart-numb{
+  background: black;
+  color: white;
+  padding: 11px 16px;
+ }
+
+ .card-table{
+  border: 1px solid gray;
+  background: #ffffff0f;
+ }
+
+ .img-card{
+  height: 19vh;
+  border-radius: 8px;
+  }
+
+
+
+  .container-card  {
+    width: 370px;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    height: 79vh;
+    margin-bottom: 37px;
+  }
+
+  .post-desc{
+    font-size: 1.2rem;
+    line-height: 2;
+    letter-spacing: 1.1;
+  }
+
+  .user-pic{
+    width: 61px;
+    border-radius: 71px;
+
+  }
+  .user-name{
+    padding: 0 4px;
+    border-left: 1px solid gray;
+  }
